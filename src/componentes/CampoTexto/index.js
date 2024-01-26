@@ -3,11 +3,19 @@ import './CampoTexto.css'
 
 const CampoTexto = (props) => {
 
-    console.log(props)
+
+    const placeholderModificate = `${props.placeholder}...` //exemplo de outra forma de construção
+    
+    let valor = ""
+    const aoDigitado = (evento) => {
+        valor= evento.target.value
+        console.log(valor)
+    }
+
     return(
         <div className="campo-texto"> 
-            <label>Nome</label>   
-            <input placeholder='Digite o seu nome'/>             
+            <label>{props.label}</label>   
+            <input onChange={aoDigitado} required={props.obrigatorio} placeholder={placeholderModificate}/>             
         </div>
     )
 }
