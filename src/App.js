@@ -8,37 +8,37 @@ function App() {
 
   const times = [
     {
-      nome: 'Programação',
+      nome: 'Músicos',
       corPrimaria: '#57c278',
       corSecundaria: '#D9F7E9'
     },
     {
-      nome: 'Front-End',
+      nome: 'Equipe de palco',
       corPrimaria: '#82CFFA',
       corSecundaria: '#E8F8FF'
     },
     {
-      nome: 'Data Science',
+      nome: 'Equipe de luzes',
       corPrimaria: '#A6D157',
       corSecundaria: '#F0F8E2'
     },
     {
-      nome: 'Devops',
+      nome: 'Produtores',
       corPrimaria: '#E06B69',
       corSecundaria: '#FDE7E8'
     },
     {
-      nome: 'UX e Desing',
+      nome: 'Organizadores',
       corPrimaria: '#DB6EBF',
       corSecundaria: '#FAE9F5'
     },
     {
-      nome: 'Mobile',
+      nome: 'Equipe de som',
       corPrimaria: '#FFBA05',
       corSecundaria: '#FFF5D9'
     },
     {
-      nome: 'Inovação e Gestão',
+      nome: 'Seguranças',
       corPrimaria: '#FF8A29',
       corSecundaria: '#FFEEDF'
     },
@@ -47,8 +47,7 @@ function App() {
 
   const [colaboradores, setColaboradores] = useState([]);
 
-  const aoNovoColaboradorAdicionado = (colaborador) => {
-    console.log(colaborador)
+  const aoNovoColaboradorAdicionado = (colaborador) => { 
     setColaboradores([...colaboradores, colaborador])
   }
 
